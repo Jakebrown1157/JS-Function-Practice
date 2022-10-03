@@ -17,7 +17,7 @@ function start(){
 }
 
 function goLeft(){
-    secondAnswer = window.prompt(`You come across a stray cat. 
+    secondAnswer = prompt(`You come across a stray cat. 
     It scampers off down a small hole, just large enough for you to crawl through. 
     Do you "follow it", or "continue on" your path?`)
     if(secondAnswer === 'follow it'){
@@ -32,8 +32,8 @@ function goLeft(){
 
 function goRight(){
     secondAnswer = window.prompt(`You come across a snoring dragon. 
-    On the other side of him, you see a shiny chest of treasure. Another path would 
-    lead you away from the dragon all together. Which do you take?`)
+    you see a shiny chest of treasure "past" him. However another path would 
+    lead you "away" from the dragon all together. Which do you take?`)
     if(secondAnswer === 'past'){
         pastTheDragon()
      }else if(secondAnswer === 'away'){
@@ -46,13 +46,15 @@ function goRight(){
 //yes I know there is an ending listed here that cant be accessed but im not sure whats wrong with it
 function Adventurers() {
     finalAnswer = window.prompt(`You decided to follow in the footsteps of your past lives, along the way you manage to tail the cat, "and Spread the word, to other Adventurers", "continue on, taking the staircase to find the blue stone", "have an uplifting conversation with a local dragon convincing him into giving you a portion of his treasure for the easy trade of a blue stone", "while finally finding a way to harness the radiant light of the sun to forever preserve you and a brilliant blue flower"  
-                                You Win What Now?`)
-}if(finalAnswer === 'continue on'){
+    You Win What Now?`)
+    if(finalAnswer === 'continue on'){
     window.alert('you decide to continue on and live the life of an Adventurer of Legends')
-}else if(finalAnswer === 'back'){
+    } else if(finalAnswer === 'back'){
     start()
+    } else {
+        start()
+    }
 }
-
 
 function follow(){
     let thirdAnswer = window.prompt('You follow the cat to a colony of cats, snuggled in a fort of warm blankets and subsisting off of inexplicably warm soup. They are content with you staying, but you wonder if you should alert the world to this magical safe haven.')
@@ -67,6 +69,8 @@ function follow(){
      }
     if(thirdAnswer === 'back'){
         goLeft()
+    } else {
+        start()
     }
 }
 
@@ -84,11 +88,13 @@ function continueOn() {
      }
     if(thirdAnswer === 'back'){
         goLeft()
+    } else {
+        start()
     }
 }
 
 function pastTheDragon(){
-    let thirdAnswer = window.prompt('The dragon awakes and sits upright. You only have a moment to respond, to stay or to run:')
+    let thirdAnswer = window.prompt('The dragon awakes and sits upright. You only have a moment to respond, to "stay" or to "run":')
     if(thirdAnswer === 'stay'){
         window.alert(`You and the dragon have an uplifting conversation about local politics and become lifelong friends.
         Game Over`)
@@ -100,11 +106,13 @@ function pastTheDragon(){
      }
     if(thirdAnswer === 'back'){
         goRight()
+    } else{ 
+        start()
     }
 }
 
 function AwayFromTheDragon() {
-    let thirdAnswer = window.prompt('After walking a while longer, you come across a shiny blue flower. It is so beautiful that you decide you must either draw it or pick it. Which do you do?')
+    let thirdAnswer = window.prompt('After walking a while longer, you come across a shiny blue flower. It is so beautiful that you decide you must either "draw it" or "pick it". Which do you do?')
     if(thirdAnswer === 'draw it'){
         window.alert(`You draw the flower, capturing only a fraction of its beauty with your quill. You bring the drawing home, somewhat disappointed, but over time discover joy in sharing the drawing with your friends and family, recounting the story of your days as a sorcerer with the aide of the sketch.
         Game Over`)
@@ -115,6 +123,8 @@ function AwayFromTheDragon() {
      }
     if(thirdAnswer === 'back'){
         goRight()
+    } else {
+        start()
     }
 }
 
