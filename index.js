@@ -1,4 +1,6 @@
 // Your Code Here
+document.body.style.backgroundImage = "url('https://www.wallpapertip.com/wmimgs/42-428371_laptop-dragon-wallpapers-hd-desktop-backgrounds-dragon-and.jpg');background-repeat: no-repeat; background-size: cover; background-attachment: fixed"
+
 let firstAnswer = 0
 let secondAnswer = 0
 let thirdAnswer = 0
