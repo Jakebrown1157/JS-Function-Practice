@@ -45,7 +45,6 @@ function goRight(){
         start()
     }
 }
-//yes I know there is an ending listed here that cant be accessed but im not sure whats wrong with it
 function Adventurers() {
     finalAnswer = window.prompt(`You decided to follow in the footsteps of your past lives, along the way you manage to tail the cat, "and Spread the word, to other Adventurers", "continue on, taking the staircase to find the blue stone", "have an uplifting conversation with a local dragon convincing him into giving you a portion of his treasure for the easy trade of a blue stone", "while finally finding a way to harness the radiant light of the sun to forever preserve you and a brilliant blue flower"  
     You Win What Now?`)
@@ -59,12 +58,12 @@ function Adventurers() {
 }
 
 function follow(){
-    let thirdAnswer = window.prompt('You follow the cat to a colony of cats, snuggled in a fort of warm blankets and subsisting off of inexplicably warm soup. They are content with you staying, but you wonder if you should alert the world to this magical safe haven.')
+    let thirdAnswer = window.prompt('You follow the cat to a colony of cats, snuggled in a fort of warm blankets and subsisting off of inexplicably warm soup. They are content with you if you want to "stay", but you wonder if you should "alert" the world to this magical safe haven.')
     if(thirdAnswer === 'stay'){
         window.alert(`You live happily amongst the cats for the rest of your days.
         Game Over`)
         start()
-     } else if(thirdAnswer === 'spread the word') {
+     } else if(thirdAnswer === 'alert') {
          window.alert(`After leaving the cat colony, you are never able to find it again. Without proof, no one believes your story, which passes into legend nonetheless.
         Game Over`)
         start()
